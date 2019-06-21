@@ -28,8 +28,6 @@ header {
 
 nav {
     display: flex;
-    /* align-self: center;
-    margin-left: auto; */
     justify-content: space-between;
     position: absolute;
     right: 350px;
@@ -64,7 +62,6 @@ nav {
     float: left;
     margin-right: 10px;
     border-right: 3px solid lightgray;
-    float: left;
     padding-right: 10px;
 
 }
@@ -104,7 +101,15 @@ footer {
     padding: 8px;
 }
 
+#inputmessage {
+    width: 900px;
+}
+
 a:hover {
+    color: black;
+}
+
+.colorchange {
     color: black;
 }
 
@@ -124,6 +129,11 @@ a:hover {
     nav {
         right: 35px;
     }
+
+    #inputmessage {
+        width: 600px;
+    }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -146,29 +156,79 @@ a:hover {
         width: 332px;
     }
 
+    #inputmessage {
+        width: 655px;
+    }
+
 
 }
 @media only screen and (max-width: 640px) {
 
+    header {
+        position: static;
+    }
+
     .main {
         margin: 20px auto 0;
         width: 600px;
-        }
+        padding-right: 20px;
+        padding-left: 20px;       
+    }
     
-        #myname {
-            left: 35px;
+    #myname {
+        left: 35px;
+        display: block;
+        text-align: center;
+    }
+    
+    nav {
+        background-color: #ffffff;
+        position: static;
+        margin: 0 220px 0 182px;
+        padding: 20px;
+
+    }
+    
+    .floatleft {
+        height: 330px;
+        width: 550px;
+        border-right: none;
+        margin: 0 auto;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    #navlines {
+        border-left: 2px solid lightgray;
+        border-right: 2px solid lightgray;
+        padding-left: 13px;
+        padding-right: 13px;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+    
+    .ppicture {
+        display: block;
+        margin: 0;
+    }
+
+    .resize {
+    height: 330px;
+    width: 550px;
+    }
+
+    .picturetext {
+        position: absolute; 
+        bottom: 20px;
+        color: white;
+        width: 550px;
+        text-align: center;
+        padding: 8px;
         
-        }
-    
-        nav {
-            right: 35px;
-        }
-    
-        .floatleft {
-            height: 200px;
-            width: 332px;
-        }
-    
-    
+    }
+
+    #inputmessage {
+        width: 560px;
+    }
 
 }
